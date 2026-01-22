@@ -1,4 +1,4 @@
-//const randomNum = Math.random(num => num > 15 && num < 10 ).parseInt();
+//MISTAKE -> const randomNum = Math.random(num => num > 15 && num < 10 ).parseInt();
 
 
 // Inbuilt Math Object Methods
