@@ -1,0 +1,9 @@
+//Varaibles...
+/* Use only const... for declaring variables. Also, 
+use let only if necessary, never use var */
+
+// Datatypes...
+/* 8 basic types mainly...
+
+Number, String, Boolean, Undefined, Null, Array, Object, Nested Object */
+
