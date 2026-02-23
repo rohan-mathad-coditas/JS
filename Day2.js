@@ -47,6 +47,9 @@ Math.sign(9); // 1
 Math.sqrt(49); // 7
 Math.sqrt(2); // 1.4142135623730951
 
+// .isInteger() checks if the given number is integer or not
+Number.isInteger(5); // true
+
 /*
 Todays session summary: 22 / 01 / 2026
 

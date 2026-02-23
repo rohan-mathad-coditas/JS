@@ -40,9 +40,38 @@ And STACK MEMORY compares the actual objects and since both are different object
 Summarizing... heap memory compares references and stack memory compares actual objects.
 
 
-truthy and falsy values in JS...
+4. truthy and falsy values in JS...
 falsy values - false, 0, "", null, undefined, NaN
 truthy values - all values other than falsy values.
+
+5. Ternary operator - a shorthand for if-else statement.
+syntax is as this... condition ? expressionIfTrue : expressionIfFalse;
+Problem discussed...
+Serve drinks based on age using ternary operator.
+
+*/ 
+if( PersonAge >= 30){
+    console.log(" Server Alcohol")
+} else if( PersonAge < 30 && PersonAge <18){
+    console.log(" Serve Beer");
+} else  {
+    console.log(" Serve Milk");
+}
+
+
+const personAge = 30;
+const alcoholCunsumptionAge = 25;
+const beerConsumptionAge = 18;
+
+const serveDrink = personAge >= alcoholCunsumptionAge ? "serve alcohol" : 
+                personAge >= beerConsumptionAge ? " serve beer" : 
+                "serve milk";   
+
+console.log(serveDrink); 
+// Output - serve alcohol 
+
+
+/*
 
 V V V IMP 
 1. NAME OF VARIABLE SHOULD BE MEANINGFUL AND AVOID USING SHORTCUTS
@@ -50,6 +79,9 @@ V V V IMP
 3. STICK TO ONLY ONE STRING STYLE "" OR '' OR `` THROUGHOUT PROGRAM... PREFERABLY USE `` FOR STRINGS
 4. NEVER USE == or != ALWAYS USE === or !== EVERYWHERE
 5. Remember this HEAP MEMORY COMPARES REFERENCES AND STACK MEMORY COMPARES ACTUAL OBJECTS
+6. Also, ternary operators should be used for basic conditions only, avoid complex conditions 
+    using ternary operators as it reduces code readability. so for complex conditions use if-else statements.
+
 
 */
 
@@ -99,8 +131,20 @@ console.log(sampleString.slice(2, 4));
 console.log(sampleString.split(" ")); 
 //["i", "am", "learning", "Javascript"]
 
-//
+//repeats the string for given number of times
+console.log(sampleString.repeat(2)); 
+//"i am learning Javascripti am learning Javascript"
 
- 
+// padEnd() adds padding to the end of the string until it reaches the given length
+// syntax - str.padEnd(targetLength, padString)
+console.log(sampleString.padEnd(30, ".")); 
+//"i am learning Javascript......"
+
+
+
+
+
+
+
 
 
